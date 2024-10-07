@@ -37,19 +37,26 @@ function App() {
 
     const observerTitlesDerecha = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        entry.target.classList.toggle('animacionDerecha', entry.isIntersecting);
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animacionDerecha');
+        }
       });
-    })
-    const imgGrandesDerecha = document.querySelectorAll('.aparecerDerecha')
-    imgGrandesDerecha.forEach((seccion)=>observerTitlesDerecha.observe(seccion))
-
+    });
+    
+    const imgGrandesDerecha = document.querySelectorAll('.aparecerDerecha');
+    imgGrandesDerecha.forEach((seccion) => observerTitlesDerecha.observe(seccion));
+    
     const observerTitlesIzquierda = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        entry.target.classList.toggle('animacionIzquierda', entry.isIntersecting);
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animacionIzquierda');
+        }
       });
-    })
-    const imgGrandesIzquierda = document.querySelectorAll('.aparecerIzquierda')
-    imgGrandesIzquierda.forEach((seccion)=>observerTitlesIzquierda.observe(seccion))
+    });
+    
+    const imgGrandesIzquierda = document.querySelectorAll('.aparecerIzquierda');
+    imgGrandesIzquierda.forEach((seccion) => observerTitlesIzquierda.observe(seccion));
+    
 
     if (conosContainerRef.current) {
       observer.observe(conosContainerRef.current);
@@ -95,16 +102,16 @@ function App() {
         <div className='conocenos__container' ref={conosContainerRef}>
           <h2 className='conocenos__title'>Conócenos</h2>
           <p className='conocenos__text'>En RDV creemos que la marca es el capital más importante de una empresa. Por ende, nuestros uniformes son diseñados teniendo en cuenta no solo la funcionalidad y practicidad de las prendas, sino también los valores que su marca desea transmitir.</p>
-          <h3 className='conocenos__slogan' id='clientes'>Diferénciese con uniformes diseñados exclusivamente para su marca</h3>
+          <h3 className='conocenos__slogan'>Diferénciese con uniformes diseñados exclusivamente para su marca</h3>
         </div>
         <img src={estatua} alt="" className='estatua'/>
       </section>
-      <section className='clientes'>
+      <section className='clientes' id='clientes'>
         <h3 className='clientes__title aparecerDerecha'>Clientes</h3>
         <p className='clientes__text'>Somos la elección predilecta de las marcas líderes en Mar del Plata y la región. <br/><br />Nuestra reputación se construye superando constantemente las expectativas más exigentes, ofreciendo excelencia en cada detalle</p>
         <Carrousel></Carrousel>
       </section>
-      <section className='delantales'>
+      <section className='delantales' id='delantales'>
           <h2 className='delantales__title aparecerIzquierda'>Delantales</h2>
           <div className='galeria'>
           <div className="galeria__img hidden">1</div>
@@ -114,10 +121,10 @@ function App() {
               <div className="galeria__img hidden">5</div>
               <div className="galeria__img hidden">6</div>
           </div>
-          <img src={delantal} alt="" className='delantal__grande aparecerDerecha'  id='delantales'/>
+          <img src={delantal} alt="" className='delantal__grande aparecerDerecha'/>
 
       </section>
-      <section className='buzos'>
+      <section className='buzos' id='buzos'>
           <h2 className='buzos__title aparecerDerecha'>Buzos</h2>
           <div className='galeria'>
           <div className="galeria__img hidden">1</div>
@@ -127,9 +134,9 @@ function App() {
               <div className="galeria__img hidden">5</div>
               <div className="galeria__img hidden">6</div>
           </div>
-          <img src={buzo} alt="" className='buzo__grande aparecerIzquierda'  id='buzos'/>
+          <img src={buzo} alt="" className='buzo__grande aparecerIzquierda'/>
       </section>
-      <section className='otros'>
+      <section className='otros' id='otros'>
           <h2 className='otros__title aparecerIzquierda'>Otros</h2>
           <div className='galeria'>
               <div className="galeria__img hidden">1</div>
@@ -139,7 +146,7 @@ function App() {
               <div className="galeria__img hidden">5</div>
               <div className="galeria__img hidden">6</div>
           </div>
-          <img src={gorra} alt="" className='remera__grande aparecerDerecha'  id='otros'/>
+          <img src={gorra} alt="" className='remera__grande aparecerDerecha'/>
       </section>
       <footer className='footer' id='contacto'>
         <div className='footer__wrapper'>
