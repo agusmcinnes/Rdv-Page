@@ -24,7 +24,7 @@ function App() {
           entry.target.classList.remove('animate');
         }
       });
-    }, { threshold: 0.1 });
+    });
 
     const observerGaleria = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
