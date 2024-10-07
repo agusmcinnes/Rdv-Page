@@ -367,7 +367,7 @@ h1{
 
 .carrousel{
     width: 80%;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: auto;
     box-shadow: 0px 0px 20px #000;
     padding: 10px;
@@ -376,7 +376,6 @@ h1{
     white-space: nowrap;
     border-radius: 20px;
     position: relative;
-    display: flex;
 }
 
 
@@ -409,8 +408,7 @@ h1{
 
 .logos{
     animation: slider 8s infinite linear;
-    display: flex;
-    justify-content: space-around;
+    display: inline-block;
 }
 
 
