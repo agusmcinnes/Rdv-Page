@@ -98,6 +98,7 @@ function App() {
           <img src={piedras} alt="" />
       </div>
 
+
       <section className='conocenos' id='conocenos'>
         <div className='conocenos__container' ref={conosContainerRef}>
           <h2 className='conocenos__title'>Conócenos</h2>
