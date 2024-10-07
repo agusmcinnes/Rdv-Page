@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Rdv-Page/static/css/main.a15e7663.css",
-    "main.js": "/Rdv-Page/static/js/main.91bf331c.js",
+    "main.css": "/Rdv-Page/static/css/main.242ce5ae.css",
+    "main.js": "/Rdv-Page/static/js/main.e0ba07c6.js",
     "static/media/Italianno-Regular.ttf": "/Rdv-Page/static/media/Italianno-Regular.af758e9e36a2222b1130.ttf",
     "static/media/Montserrat-Medium.ttf": "/Rdv-Page/static/media/Montserrat-Medium.b8c6753baa964ccac1ba.ttf",
     "static/media/Montserrat-Light.ttf": "/Rdv-Page/static/media/Montserrat-Light.7179b7d2ac9b599db5f9.ttf",
@@ -18,11 +18,11 @@
     "static/media/whatsapp.svg": "/Rdv-Page/static/media/whatsapp.5ad5606a16948e3fb998bc0f23a0c68b.svg",
     "static/media/Mail.svg": "/Rdv-Page/static/media/Mail.957cba1c454431c7cf8e8a3614ad6b82.svg",
     "index.html": "/Rdv-Page/index.html",
-    "main.a15e7663.css.map": "/Rdv-Page/static/css/main.a15e7663.css.map",
-    "main.91bf331c.js.map": "/Rdv-Page/static/js/main.91bf331c.js.map"
+    "main.242ce5ae.css.map": "/Rdv-Page/static/css/main.242ce5ae.css.map",
+    "main.e0ba07c6.js.map": "/Rdv-Page/static/js/main.e0ba07c6.js.map"
   },
   "entrypoints": [
-    "static/css/main.a15e7663.css",
-    "static/js/main.91bf331c.js"
+    "static/css/main.242ce5ae.css",
+    "static/js/main.e0ba07c6.js"
   ]
 }
