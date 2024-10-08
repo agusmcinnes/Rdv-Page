@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Rdv-Page/static/css/main.a0c99a78.css",
+    "main.css": "/Rdv-Page/static/css/main.f93eb6ae.css",
     "main.js": "/Rdv-Page/static/js/main.c8c91337.js",
     "static/media/Italianno-Regular.ttf": "/Rdv-Page/static/media/Italianno-Regular.af758e9e36a2222b1130.ttf",
     "static/media/Montserrat-Medium.ttf": "/Rdv-Page/static/media/Montserrat-Medium.b8c6753baa964ccac1ba.ttf",
@@ -18,11 +18,11 @@
     "static/media/whatsapp.svg": "/Rdv-Page/static/media/whatsapp.5ad5606a16948e3fb998bc0f23a0c68b.svg",
     "static/media/Mail.svg": "/Rdv-Page/static/media/Mail.957cba1c454431c7cf8e8a3614ad6b82.svg",
     "index.html": "/Rdv-Page/index.html",
-    "main.a0c99a78.css.map": "/Rdv-Page/static/css/main.a0c99a78.css.map",
+    "main.f93eb6ae.css.map": "/Rdv-Page/static/css/main.f93eb6ae.css.map",
     "main.c8c91337.js.map": "/Rdv-Page/static/js/main.c8c91337.js.map"
   },
   "entrypoints": [
-    "static/css/main.a0c99a78.css",
+    "static/css/main.f93eb6ae.css",
     "static/js/main.c8c91337.js"
   ]
 }
