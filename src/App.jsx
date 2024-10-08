@@ -162,22 +162,22 @@ observerFirstPage.observe(firstPage);
           <h2 className='delantales__title aparecerIzquierda'>Delantales</h2>
           <div className='galeria'>
               <div className="galeria__img hidden">
-                <img src={delantal4} alt="" />
+                <img src={delantal4} alt="" loading='lazy'/>
               </div>
               <div className="galeria__img hidden">
-                <img src={delantal1} alt="" />
+                <img src={delantal1} alt="" loading='lazy'/>
               </div>
               <div className="galeria__img hidden">
-              <img src={delantal3} alt="" />
+              <img src={delantal3} alt="" loading='lazy'/>
               </div>
               <div className="galeria__img hidden">
-                <img src={delantal2} alt="" />
+                <img src={delantal2} alt="" loading='lazy'/>
               </div>
               <div className="galeria__img hidden">
-                <img src={delantal5} alt="" />
+                <img src={delantal5} alt="" loading='lazy'/>
               </div>
               <div className="galeria__img hidden">
-                <img src={delantal6} alt="" />
+                <img src={delantal6} alt="" loading='lazy'/>
               </div>
           </div>
           <img src={delantal} alt="" className='delantal__grande aparecerDerecha'/>
@@ -187,22 +187,22 @@ observerFirstPage.observe(firstPage);
           <h2 className='buzos__title aparecerDerecha'>Superior</h2>
           <div className='galeria'>
               <div className="galeria__img hidden">
-                <img src={superior4} alt="" />
+                <img src={superior4} alt="" loading='lazy'/>
               </div>
               <div className="galeria__img hidden">
-                <img src={superior2} alt="" />
+                <img src={superior2} alt="" loading='lazy'/>
               </div>
               <div className="galeria__img hidden">
-                <img src={superior1} alt="" />
+                <img src={superior1} alt="" loading='lazy'/>
               </div>
               <div className="galeria__img hidden">
-                <img src={superior6} alt="" />
+                <img src={superior6} alt="" loading='lazy'/>
               </div>
               <div className="galeria__img hidden">
-                <img src={superior5} alt="" />
+                <img src={superior5} alt="" loading='lazy'/>
               </div>
               <div className="galeria__img hidden">
-                <img src={superior3} alt="" />
+                <img src={superior3} alt="" loading='lazy'/>
               </div>
               </div>
           <img src={buzo} alt="" className='buzo__grande aparecerIzquierda'/>
