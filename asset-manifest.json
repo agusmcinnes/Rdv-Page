@@ -1,14 +1,26 @@
 {
   "files": {
-    "main.css": "/Rdv-Page/static/css/main.f93eb6ae.css",
-    "main.js": "/Rdv-Page/static/js/main.c8c91337.js",
+    "main.css": "/Rdv-Page/static/css/main.5af42603.css",
+    "main.js": "/Rdv-Page/static/js/main.f511319e.js",
+    "static/media/superior3.webp": "/Rdv-Page/static/media/superior3.a6ac432f6d9b8172fd93.webp",
+    "static/media/superior4.webp": "/Rdv-Page/static/media/superior4.e7b3f7442972a5db24dd.webp",
+    "static/media/delantal2.webp": "/Rdv-Page/static/media/delantal2.f9f1c13e5b4b1c18c131.webp",
+    "static/media/superior6.webp": "/Rdv-Page/static/media/superior6.9949ecd98ad05f7528a0.webp",
     "static/media/Italianno-Regular.ttf": "/Rdv-Page/static/media/Italianno-Regular.af758e9e36a2222b1130.ttf",
     "static/media/Montserrat-Medium.ttf": "/Rdv-Page/static/media/Montserrat-Medium.b8c6753baa964ccac1ba.ttf",
     "static/media/Montserrat-Light.ttf": "/Rdv-Page/static/media/Montserrat-Light.7179b7d2ac9b599db5f9.ttf",
+    "static/media/superior5.webp": "/Rdv-Page/static/media/superior5.a26fef108043d6291b51.webp",
+    "static/media/delantal4.webp": "/Rdv-Page/static/media/delantal4.2da4491af407d0891ac4.webp",
     "static/media/buzoRDV.webp": "/Rdv-Page/static/media/buzoRDV.f32f49b7d2b1ea78bd71.webp",
     "static/media/estatua_rdv.webp": "/Rdv-Page/static/media/estatua_rdv.4da5c90def835b582164.webp",
+    "static/media/delantal6.webp": "/Rdv-Page/static/media/delantal6.882f9ec4a58ad236f323.webp",
     "static/media/gorraRdv.webp": "/Rdv-Page/static/media/gorraRdv.871a20a9181e24633992.webp",
     "static/media/delantal.webp": "/Rdv-Page/static/media/delantal.f080c9f48d7af2c0ee31.webp",
+    "static/media/delantal5.webp": "/Rdv-Page/static/media/delantal5.588658a6b7bbc3493bfb.webp",
+    "static/media/delantal1.webp": "/Rdv-Page/static/media/delantal1.49e3006d7fafb6469755.webp",
+    "static/media/superior2.webp": "/Rdv-Page/static/media/superior2.e0d10c8a99f26b8aaeed.webp",
+    "static/media/delantal3.webp": "/Rdv-Page/static/media/delantal3.24aa328416afa292d5fc.webp",
+    "static/media/superior1.webp": "/Rdv-Page/static/media/superior1.3da16de65529986f2273.webp",
     "static/media/RDV-.png": "/Rdv-Page/static/media/RDV-.a75cdce9655a3ba06678.png",
     "static/media/JosefinSlab-LightItalic.ttf": "/Rdv-Page/static/media/JosefinSlab-LightItalic.94ef79b93ecf94a60a48.ttf",
     "static/media/JosefinSlab-SemiBold.ttf": "/Rdv-Page/static/media/JosefinSlab-SemiBold.989b184cb08ea089a365.ttf",
@@ -18,11 +30,11 @@
     "static/media/whatsapp.svg": "/Rdv-Page/static/media/whatsapp.5ad5606a16948e3fb998bc0f23a0c68b.svg",
     "static/media/Mail.svg": "/Rdv-Page/static/media/Mail.957cba1c454431c7cf8e8a3614ad6b82.svg",
     "index.html": "/Rdv-Page/index.html",
-    "main.f93eb6ae.css.map": "/Rdv-Page/static/css/main.f93eb6ae.css.map",
-    "main.c8c91337.js.map": "/Rdv-Page/static/js/main.c8c91337.js.map"
+    "main.5af42603.css.map": "/Rdv-Page/static/css/main.5af42603.css.map",
+    "main.f511319e.js.map": "/Rdv-Page/static/js/main.f511319e.js.map"
   },
   "entrypoints": [
-    "static/css/main.f93eb6ae.css",
-    "static/js/main.c8c91337.js"
+    "static/css/main.5af42603.css",
+    "static/js/main.f511319e.js"
   ]
 }
