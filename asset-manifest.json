@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Rdv-Page/static/css/main.5af42603.css",
-    "main.js": "/Rdv-Page/static/js/main.f511319e.js",
+    "main.js": "/Rdv-Page/static/js/main.0bdb322e.js",
     "static/media/superior3.webp": "/Rdv-Page/static/media/superior3.a6ac432f6d9b8172fd93.webp",
     "static/media/superior4.webp": "/Rdv-Page/static/media/superior4.e7b3f7442972a5db24dd.webp",
     "static/media/delantal2.webp": "/Rdv-Page/static/media/delantal2.f9f1c13e5b4b1c18c131.webp",
@@ -31,10 +31,10 @@
     "static/media/Mail.svg": "/Rdv-Page/static/media/Mail.957cba1c454431c7cf8e8a3614ad6b82.svg",
     "index.html": "/Rdv-Page/index.html",
     "main.5af42603.css.map": "/Rdv-Page/static/css/main.5af42603.css.map",
-    "main.f511319e.js.map": "/Rdv-Page/static/js/main.f511319e.js.map"
+    "main.0bdb322e.js.map": "/Rdv-Page/static/js/main.0bdb322e.js.map"
   },
   "entrypoints": [
     "static/css/main.5af42603.css",
-    "static/js/main.f511319e.js"
+    "static/js/main.0bdb322e.js"
   ]
 }
