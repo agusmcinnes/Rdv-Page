@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import './style.css';
 import Carrousel from './Carrousel';
-import rdvLogo from "./IMAGENES/rdvLogo.webp";
+import rdvLogo from "./IMAGENES/RDV-.png";
 import estatua from "./IMAGENES/estatua_rdv.webp";
 import piedras from "./IMAGENES/piedras.png";
 import delantal from "./IMAGENES/delantal.webp"
@@ -57,6 +57,37 @@ function App() {
     const imgGrandesIzquierda = document.querySelectorAll('.aparecerIzquierda');
     imgGrandesIzquierda.forEach((seccion) => observerTitlesIzquierda.observe(seccion));
     
+// Selecciona el header y las secciones a observar
+const header = document.querySelector('.header');
+const firstPage = document.querySelector('.first__page'); // La primera sección (para quitar la clase)
+const cajasSection = document.querySelector('.cajas'); // La sección "cajas"
+
+// Observer para la sección "cajas"
+const observerCajas = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      header.classList.add('small-header'); // Agrega la clase cuando la sección "cajas" sea visible
+    }
+  });
+}, {
+  threshold: 0.7 // Cuando la mitad de la sección "cajas" esté visible
+});
+
+// Observer para la primera página
+const observerFirstPage = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      header.classList.remove('small-header'); // Quita la clase cuando se vuelve a la primera sección
+    }
+  });
+}, {
+  threshold: 0.9 // Cuando la mitad de la "first__page" sea visible
+});
+
+// Inicia la observación de ambas secciones
+observerCajas.observe(cajasSection);
+observerFirstPage.observe(firstPage);
+
 
     if (conosContainerRef.current) {
       observer.observe(conosContainerRef.current);

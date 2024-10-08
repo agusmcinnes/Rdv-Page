@@ -61,26 +61,16 @@ body{
 .header{
     position: fixed;
     width: 100%;
+    top: 10%;
+    z-index: 2000;
+}
 
-    view-timeline-name: --aparecer;
-    view-timeline-axis: block;
-
-    animation-timeline: --aparecer;
-    animation-range: entry 200% contain 170%;
-
-    animation-name: small_header;
-
-    animation-fill-mode: both;
-    z-index: 1000;
+.small-header{
+    animation: small_header 1s ease-out both;
 }
 
 @keyframes small_header {
     0%{
-        top: 10%;
-        background-color: transparent;
-        box-shadow: 0 0 0;
-    }
-    70%{
         top: 10%;
         background-color: transparent;
         box-shadow: 0 0 0;
@@ -142,7 +132,7 @@ body{
 }
 
 .logo{
-    width: clamp(200px, 40dvw, 250px);
+    width: clamp(300px, 40dvw, 400px);
     z-index: 10;
     filter: drop-shadow(10px 10px 3px #0000005b);
     animation: aparecer_costado 1s both;
