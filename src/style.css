@@ -66,7 +66,7 @@ body{
     view-timeline-axis: block;
 
     animation-timeline: --aparecer;
-    animation-range: entry 100% cover 170%;
+    animation-range: entry 200% contain 170%;
 
     animation-name: small_header;
 
