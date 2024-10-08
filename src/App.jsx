@@ -10,6 +10,21 @@ import gorra from "./IMAGENES/gorraRdv.webp"
 import mail from './IMAGENES/Mail.svg'
 import instagram from './IMAGENES/instagram.svg'
 import whatsapp from './IMAGENES/whatsapp.svg'
+import delantal1 from './IMAGENES/delantal1.webp'
+import delantal2 from './IMAGENES/delantal2.webp'
+import delantal3 from './IMAGENES/delantal3.webp'
+import delantal4 from './IMAGENES/delantal4.webp'
+import delantal5 from './IMAGENES/delantal5.webp'
+import delantal6 from './IMAGENES/delantal6.webp'
+
+import superior1 from './IMAGENES/superior1.webp'
+
+import superior2 from './IMAGENES/superior2.webp'
+import superior3 from './IMAGENES/superior3.webp'
+import superior4 from './IMAGENES/superior4.webp'
+import superior5 from './IMAGENES/superior5.webp'
+import superior6 from './IMAGENES/superior6.webp'
+
 
 function App() {
   const conosContainerRef = useRef(null);
@@ -108,8 +123,8 @@ observerFirstPage.observe(firstPage);
                 <li className="nav__item"><a href="#conocenos">Conócenos</a></li>
                 <li className="nav__item"><a href="#clientes">Clientes</a></li>
                 <li className="nav__item"><a href="#delantales">Delantales</a></li>
-                <li className="nav__item"><a href="#buzos">Buzos</a></li>
-                <li className="nav__item"><a href="#otros">Otros</a></li>
+                <li className="nav__item"><a href="#buzos">Superior</a></li>
+                <li className="nav__item"><a href="#otros">Accesorios</a></li>
                 <li className="nav__item"><a href="#contacto">Contactame</a></li>
               </ul>
               <span className='span'> </span>
@@ -146,30 +161,54 @@ observerFirstPage.observe(firstPage);
       <section className='delantales' id='delantales'>
           <h2 className='delantales__title aparecerIzquierda'>Delantales</h2>
           <div className='galeria'>
-          <div className="galeria__img hidden">1</div>
-              <div className="galeria__img hidden">2</div>
-              <div className="galeria__img hidden">3</div>
-              <div className="galeria__img hidden">4</div>
-              <div className="galeria__img hidden">5</div>
-              <div className="galeria__img hidden">6</div>
+              <div className="galeria__img hidden">
+                <img src={delantal4} alt="" />
+              </div>
+              <div className="galeria__img hidden">
+                <img src={delantal1} alt="" />
+              </div>
+              <div className="galeria__img hidden">
+              <img src={delantal3} alt="" />
+              </div>
+              <div className="galeria__img hidden">
+                <img src={delantal2} alt="" />
+              </div>
+              <div className="galeria__img hidden">
+                <img src={delantal5} alt="" />
+              </div>
+              <div className="galeria__img hidden">
+                <img src={delantal6} alt="" />
+              </div>
           </div>
           <img src={delantal} alt="" className='delantal__grande aparecerDerecha'/>
 
       </section>
       <section className='buzos' id='buzos'>
-          <h2 className='buzos__title aparecerDerecha'>Buzos</h2>
+          <h2 className='buzos__title aparecerDerecha'>Superior</h2>
           <div className='galeria'>
-          <div className="galeria__img hidden">1</div>
-              <div className="galeria__img hidden">2</div>
-              <div className="galeria__img hidden">3</div>
-              <div className="galeria__img hidden">4</div>
-              <div className="galeria__img hidden">5</div>
-              <div className="galeria__img hidden">6</div>
-          </div>
+              <div className="galeria__img hidden">
+                <img src={superior4} alt="" />
+              </div>
+              <div className="galeria__img hidden">
+                <img src={superior2} alt="" />
+              </div>
+              <div className="galeria__img hidden">
+                <img src={superior1} alt="" />
+              </div>
+              <div className="galeria__img hidden">
+                <img src={superior6} alt="" />
+              </div>
+              <div className="galeria__img hidden">
+                <img src={superior5} alt="" />
+              </div>
+              <div className="galeria__img hidden">
+                <img src={superior3} alt="" />
+              </div>
+              </div>
           <img src={buzo} alt="" className='buzo__grande aparecerIzquierda'/>
       </section>
       <section className='otros' id='otros'>
-          <h2 className='otros__title aparecerIzquierda'>Otros</h2>
+          <h2 className='otros__title aparecerIzquierda'>Accesorios</h2>
           <div className='galeria'>
               <div className="galeria__img hidden">1</div>
               <div className="galeria__img hidden">2</div>
