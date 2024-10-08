@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Rdv-Page/static/css/main.258937ff.css",
-    "main.js": "/Rdv-Page/static/js/main.e0ba07c6.js",
+    "main.css": "/Rdv-Page/static/css/main.a0c99a78.css",
+    "main.js": "/Rdv-Page/static/js/main.c8c91337.js",
     "static/media/Italianno-Regular.ttf": "/Rdv-Page/static/media/Italianno-Regular.af758e9e36a2222b1130.ttf",
     "static/media/Montserrat-Medium.ttf": "/Rdv-Page/static/media/Montserrat-Medium.b8c6753baa964ccac1ba.ttf",
     "static/media/Montserrat-Light.ttf": "/Rdv-Page/static/media/Montserrat-Light.7179b7d2ac9b599db5f9.ttf",
@@ -9,20 +9,20 @@
     "static/media/estatua_rdv.webp": "/Rdv-Page/static/media/estatua_rdv.4da5c90def835b582164.webp",
     "static/media/gorraRdv.webp": "/Rdv-Page/static/media/gorraRdv.871a20a9181e24633992.webp",
     "static/media/delantal.webp": "/Rdv-Page/static/media/delantal.f080c9f48d7af2c0ee31.webp",
+    "static/media/RDV-.png": "/Rdv-Page/static/media/RDV-.a75cdce9655a3ba06678.png",
     "static/media/JosefinSlab-LightItalic.ttf": "/Rdv-Page/static/media/JosefinSlab-LightItalic.94ef79b93ecf94a60a48.ttf",
     "static/media/JosefinSlab-SemiBold.ttf": "/Rdv-Page/static/media/JosefinSlab-SemiBold.989b184cb08ea089a365.ttf",
-    "static/media/rdvLogo.webp": "/Rdv-Page/static/media/rdvLogo.0a5480f00bfab36b5d39.webp",
     "static/media/piedras.png": "/Rdv-Page/static/media/piedras.a545fe1fabd50b499812.png",
     "static/media/logo_antares.svg": "/Rdv-Page/static/media/logo_antares.132d91178da4e8d0f66fc87d1536bf1e.svg",
     "static/media/instagram.svg": "/Rdv-Page/static/media/instagram.a04a29807be65b6c5a689ee1b65a2fe1.svg",
     "static/media/whatsapp.svg": "/Rdv-Page/static/media/whatsapp.5ad5606a16948e3fb998bc0f23a0c68b.svg",
     "static/media/Mail.svg": "/Rdv-Page/static/media/Mail.957cba1c454431c7cf8e8a3614ad6b82.svg",
     "index.html": "/Rdv-Page/index.html",
-    "main.258937ff.css.map": "/Rdv-Page/static/css/main.258937ff.css.map",
-    "main.e0ba07c6.js.map": "/Rdv-Page/static/js/main.e0ba07c6.js.map"
+    "main.a0c99a78.css.map": "/Rdv-Page/static/css/main.a0c99a78.css.map",
+    "main.c8c91337.js.map": "/Rdv-Page/static/js/main.c8c91337.js.map"
   },
   "entrypoints": [
-    "static/css/main.258937ff.css",
-    "static/js/main.e0ba07c6.js"
+    "static/css/main.a0c99a78.css",
+    "static/js/main.c8c91337.js"
   ]
 }
