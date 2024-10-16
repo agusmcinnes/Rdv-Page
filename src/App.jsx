@@ -1,12 +1,14 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState} from 'react';
 import './style.css';
 import Carrousel from './Carrousel';
 import rdvLogo from "./IMAGENES/RDV-.png";
-import estatua from "./IMAGENES/estatua_rdv.webp";
+import { faX, faBars } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import textil from './IMAGENES/textilMovimiento.png'
 import piedras from "./IMAGENES/piedras.png";
-import delantal from "./IMAGENES/delantal.webp"
-import buzo from "./IMAGENES/buzoRDV.webp"
-import gorra from "./IMAGENES/gorraRdv.webp"
+import delantal from "./IMAGENES/DelantalRdvNew.webp"
+import buzo from "./IMAGENES/BuzoRdvNew.webp"
+import gorra from "./IMAGENES/GorraRdvNew.webp"
 import mail from './IMAGENES/Mail.svg'
 import instagram from './IMAGENES/instagram.svg'
 import whatsapp from './IMAGENES/whatsapp.svg'
@@ -18,12 +20,21 @@ import delantal5 from './IMAGENES/delantal5.webp'
 import delantal6 from './IMAGENES/delantal6.webp'
 
 import superior1 from './IMAGENES/superior1.webp'
-
 import superior2 from './IMAGENES/superior2.webp'
 import superior3 from './IMAGENES/superior3.webp'
 import superior4 from './IMAGENES/superior4.webp'
 import superior5 from './IMAGENES/superior5.webp'
 import superior6 from './IMAGENES/superior6.webp'
+
+
+import accesorio1 from './IMAGENES/accesorios1.webp'
+import accesorio2 from './IMAGENES/accesorios2.webp'
+import accesorio3 from './IMAGENES/accesorios3.webp'
+import accesorio4 from './IMAGENES/accesorios4.webp'
+import accesorio5 from './IMAGENES/accesorios5.webp'
+import accesorio6 from './IMAGENES/accesorios6.webp'
+import accesorio7 from './IMAGENES/accesorios7.webp'
+import accesorio8 from './IMAGENES/accesorios8.webp'
 
 
 function App() {
@@ -115,17 +126,36 @@ observerFirstPage.observe(firstPage);
     };
   }, []);
 
+  const [menuVisible, setMenuVisible] = useState(false);
+
+  const abrirMenu = () => {
+      setMenuVisible(!menuVisible);
+  };
+
+  const cerrarMenu = () => {
+      setMenuVisible(false);
+  };
+
   return (
     <div className="App">
-              <header className='header'>
-            <nav className='nav'>
+      <header className='header'>
+          <div>
+            <button className='open__button'onClick={abrirMenu} title='menu'>
+            <FontAwesomeIcon icon={faBars} />
+              
+            </button>
+          </div>
+            <nav className={`nav ${menuVisible ? 'visible' : ''}`}>
+                <button className='close__button' onClick={cerrarMenu} title='close'>
+                <FontAwesomeIcon icon={faX} />
+            </button>
               <ul className="nav__list">
-                <li className="nav__item"><a href="#conocenos">Conócenos</a></li>
-                <li className="nav__item"><a href="#clientes">Clientes</a></li>
-                <li className="nav__item"><a href="#delantales">Delantales</a></li>
-                <li className="nav__item"><a href="#buzos">Superior</a></li>
-                <li className="nav__item"><a href="#otros">Accesorios</a></li>
-                <li className="nav__item"><a href="#contacto">Contactame</a></li>
+                <li className="nav__item"><a href="#conocenos" onClick={cerrarMenu}>Conócenos</a></li>
+                <li className="nav__item"><a href="#clientes" onClick={cerrarMenu}>Clientes</a></li>
+                <li className="nav__item"><a href="#delantales" onClick={cerrarMenu}>Delantales</a></li>
+                <li className="nav__item"><a href="#buzos" onClick={cerrarMenu}>Superior</a></li>
+                <li className="nav__item"><a href="#otros" onClick={cerrarMenu}>Accesorios</a></li>
+                <li className="nav__item"><a href="#contacto" onClick={cerrarMenu}>Contactame</a></li>
               </ul>
               <span className='span'> </span>
             </nav>
@@ -137,7 +167,7 @@ observerFirstPage.observe(firstPage);
 
       <div className='cajas'>
         <div className="caja"><span className='caja__text'>+20 Años de experiencia</span></div>
-        <div className="caja"><span className='caja__text'>Alta calidad de confección</span></div>
+        <div className="caja"><span className='caja__text'>Calidad de confección</span></div>
         <div className="caja"><span className='caja__text'>Diseños exclusivos de prendas</span></div>
       </div>
       <div className='piedras'>
@@ -151,7 +181,7 @@ observerFirstPage.observe(firstPage);
           <p className='conocenos__text'>En RDV creemos que la marca es el capital más importante de una empresa. Por ende, nuestros uniformes son diseñados teniendo en cuenta no solo la funcionalidad y practicidad de las prendas, sino también los valores que su marca desea transmitir.</p>
           <h3 className='conocenos__slogan'>Diferénciese con uniformes diseñados exclusivamente para su marca</h3>
         </div>
-        <img src={estatua} alt="" className='estatua'/>
+        <img src={textil} alt="" className='estatua'/>
       </section>
       <section className='clientes' id='clientes'>
         <h3 className='clientes__title aparecerDerecha'>Clientes</h3>
@@ -209,13 +239,31 @@ observerFirstPage.observe(firstPage);
       </section>
       <section className='otros' id='otros'>
           <h2 className='otros__title aparecerIzquierda'>Accesorios</h2>
-          <div className='galeria'>
-              <div className="galeria__img hidden">1</div>
-              <div className="galeria__img hidden">2</div>
-              <div className="galeria__img hidden">3</div>
-              <div className="galeria__img hidden">4</div>
-              <div className="galeria__img hidden">5</div>
-              <div className="galeria__img hidden">6</div>
+          <div className='galeria galeria__accesorios'>
+              <div className="galeria__img hidden">
+                <img src={accesorio1} alt="" />
+              </div>
+              <div className="galeria__img hidden">
+                <img src={accesorio2} alt="" />
+              </div>
+              <div className="galeria__img hidden">
+                <img src={accesorio3} alt="" />
+              </div>
+              <div className="galeria__img hidden">
+                <img src={accesorio4} alt="" />
+              </div>
+              <div className="galeria__img hidden">
+                <img src={accesorio5} alt="" />
+              </div>
+              <div className="galeria__img hidden">
+                <img src={accesorio8} alt="" />
+              </div>
+              <div className="galeria__img hidden">
+                <img src={accesorio6} alt="" />
+              </div>
+              <div className="galeria__img hidden">
+                <img src={accesorio7} alt="" />
+              </div>
           </div>
           <img src={gorra} alt="" className='remera__grande aparecerDerecha'/>
       </section>
@@ -237,7 +285,7 @@ observerFirstPage.observe(firstPage);
                   </div>
                   <div className='red'>
                         <img src={mail} alt="" />
-                        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new">rociodelvalle@yahoo.com</a>
+                        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new">rociodelvallea@yahoo.com</a>
                   </div>
               </div>
           </div>
