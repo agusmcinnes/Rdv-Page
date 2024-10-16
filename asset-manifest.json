@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Rdv-Page/static/css/main.6f4e5d7b.css",
+    "main.css": "/Rdv-Page/static/css/main.5248d71a.css",
     "main.js": "/Rdv-Page/static/js/main.d8b1c690.js",
     "static/media/textilMovimiento.png": "/Rdv-Page/static/media/textilMovimiento.5d88ee6c4c3e8b84c6d3.png",
     "static/media/superior3.webp": "/Rdv-Page/static/media/superior3.a6ac432f6d9b8172fd93.webp",
@@ -48,11 +48,11 @@
     "static/media/whatsapp.svg": "/Rdv-Page/static/media/whatsapp.5ad5606a16948e3fb998bc0f23a0c68b.svg",
     "index.html": "/Rdv-Page/index.html",
     "static/media/Mail.svg": "/Rdv-Page/static/media/Mail.957cba1c454431c7cf8e8a3614ad6b82.svg",
-    "main.6f4e5d7b.css.map": "/Rdv-Page/static/css/main.6f4e5d7b.css.map",
+    "main.5248d71a.css.map": "/Rdv-Page/static/css/main.5248d71a.css.map",
     "main.d8b1c690.js.map": "/Rdv-Page/static/js/main.d8b1c690.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f4e5d7b.css",
+    "static/css/main.5248d71a.css",
     "static/js/main.d8b1c690.js"
   ]
 }
