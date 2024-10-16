@@ -17,25 +17,31 @@ import sj from './IMAGENES/SJ.png'
 const Carrousel = () => {
 
 
+
     useEffect(() => {
-        const logos = document.querySelectorAll('.logos');
-        const carrousel = document.querySelectorAll('.carrousel');
-        
+        const carrousel = document.querySelector('.carrousel'); // Selecciona el contenedor carrousel
+        const logos = document.querySelectorAll('.logos'); // Selecciona los elementos logos
+    
         const observerCarrousel = new IntersectionObserver((entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
-              entry.target.classList.add('sliderNew');
+              logos.forEach((logo) => logo.classList.add('sliderNew')); // Agrega la clase a los logos
             }
           });
         });
     
-        carrousel.forEach((seccion) => observerCarrousel.observe(seccion));
-        
-        // Cleanup function
+        if (carrousel) {
+          observerCarrousel.observe(carrousel); // Observa el contenedor carrousel
+        }
+    
+        // Cleanup
         return () => {
-          carrousel.forEach((seccion) => observerCarrousel.unobserve(seccion));
+          if (carrousel) {
+            observerCarrousel.unobserve(carrousel);
+          }
         };
       }, []);
+    
   
     return (
         <div className='carrousel'>
