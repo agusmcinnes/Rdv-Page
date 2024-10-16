@@ -113,7 +113,7 @@ body{
 }
 
 .nav__item{
-    font-family: Calibri;
+    font-family: Calibri, montserrat;
     list-style: none;
     transition: background-color 0.4s;
     border-radius: 10px;
@@ -141,10 +141,10 @@ body{
 }
 
 h1{
-    font-family: Calibri;
+    font-family: Calibri, montserrat;
     color: #565656;
     font-weight: 100;
-    font-size: clamp(3rem, 6vw, 4rem);
+    font-size: clamp(2.4rem, 6vw, 4rem);
     animation: aparecer 3s both;
 }
 
@@ -186,9 +186,8 @@ h1{
         width: 60%;
         z-index: 1000;
         flex-direction: column;
-        justify-content: start;
+        justify-content: space-around;
         align-items: start;
-        gap: 20px;
         filter: drop-shadow(0 0 0 100vmax #00000068);
         padding-top: 2rem;
         box-shadow: 0 0 0 100vmax #2c2a2a5b;
@@ -202,7 +201,6 @@ h1{
     .nav__item{
         border-left: 1px solid #a49797;
         border-radius: 0px;
-        vertical-align: middle;
         padding: 0px;
         text-wrap: nowrap;
         width: fit-content;
@@ -221,11 +219,10 @@ h1{
     }
 
     .nav__list{
-        height: 50%;
         width: 100%;
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 40px;
         padding-left: 20px;
     }
 }
