@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import antaresLogo from './IMAGENES/logo_antares.svg'
 import Lh_Logo from './IMAGENES/LH.png'
 import mambru from './IMAGENES/MAMBRU.png'
@@ -12,11 +12,35 @@ import batuta from './IMAGENES/BATUTA.png'
 import sj from './IMAGENES/SJ.png'
 
 
+
+
 const Carrousel = () => {
+
+
+    useEffect(() => {
+        const logos = document.querySelectorAll('.logos');
+        const carrousel = document.querySelectorAll('.carrousel');
+        
+        const observerCarrousel = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('sliderNew');
+            }
+          });
+        });
+    
+        carrousel.forEach((seccion) => observerCarrousel.observe(seccion));
+        
+        // Cleanup function
+        return () => {
+          carrousel.forEach((seccion) => observerCarrousel.unobserve(seccion));
+        };
+      }, []);
+  
     return (
         <div className='carrousel'>
             <div className='logos__wrapper'>
-            <div className='logos'>
+            <div className='logos addSlider'>
                 <img src={antaresLogo} alt="antares" className='client__logo' loading='lazy'/>
                 <img src={Lh_Logo} alt="lh" className='client__logo' loading='lazy'/>
                 <img src={bluhen} alt="bluhen" className='client__logo' loading='lazy'/>
@@ -29,7 +53,7 @@ const Carrousel = () => {
                 <img src={batuta} alt="batuta" className='client__logo' loading='lazy'/>
                 <img src={sj} alt="sj" className='client__logo' loading='lazy'/>
                 </div>
-                <div className='logos logos2'>
+                <div className='logos addSlider'>
                 <img src={antaresLogo} alt="antares" className='client__logo' loading='lazy'/>
                 <img src={Lh_Logo} alt="lh" className='client__logo' loading='lazy'/>
                 <img src={bluhen} alt="bluhen" className='client__logo' loading='lazy'/>
